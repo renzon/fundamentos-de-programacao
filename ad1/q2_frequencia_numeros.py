@@ -9,28 +9,34 @@ quantidade_de_numeros = len(numeros)  # quantidade_de_numeros = 2
 
 
 def retornar_numero_com_maior_frequencia(numeros):
-    frequencias = [
-        # [1, 1],
-        # [2, 2],
-        # [4, 3],
-        # [1, 4],
-        # [3, 9],
-        # [2, 8],
-        # [1, 5.5],
-    ]
+    # frequencias = [
+    #     # [1, 1],
+    #     # [2, 2],
+    #     # [4, 3],
+    #     # [1, 4],
+    #     # [3, 9],
+    #     # [2, 8],
+    #     # [1, 5.5],
+    # ]
+    #
+    # for n in numeros:  # n=6
+    #     flag_numero_encontrado = False
+    #     for frequencia_numero in frequencias:
+    #         if n == frequencia_numero[1]:
+    #             frequencia_numero[0] += 1
+    #             flag_numero_encontrado = True
+    #             break
+    #     if not flag_numero_encontrado:
+    #         frequencia_numero = [1, n]
+    #         frequencias.append(frequencia_numero)
 
-    for n in numeros:  # n=6
-        flag_numero_encontrado = False
-        for frequencia_numero in frequencias:
-            if n == frequencia_numero[1]:
-                frequencia_numero[0] += 1
-                flag_numero_encontrado = True
-                break
-        if not flag_numero_encontrado:
-            frequencia_numero = [1, n]
-            frequencias.append(frequencia_numero)
-
-    return max(frequencias)
+    frequencias = {}
+    for n in numeros:
+        freq_n = frequencias.get(n, 0)
+        freq_n += 1
+        frequencias[n] = freq_n
+    invertido=[(valor, chave) for chave, valor in frequencias.items()]
+    return max(invertido)
 
 
 if quantidade_de_numeros == 0:
