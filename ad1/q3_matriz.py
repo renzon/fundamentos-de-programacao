@@ -1,7 +1,7 @@
-# n_m_str = input('Digite as dimensões de uma matriz bidimentisionsl: ')
-# n, m = n_m_str.split()
-# n = int(n)
-# m = int(m)
+n_m_str = input('Digite as dimensões de uma matriz bidimentisionsl: ')
+n, m = n_m_str.split()
+n = int(n)
+m = int(m)
 from random import randint
 from typing import List
 
@@ -38,7 +38,7 @@ def calcular_soma_das_linhas(matriz):
         print(f'Soma da Linha {i} = {sum(linha)}')
 
 
-matriz = produzir_matriz(3, 2)
+matriz = produzir_matriz(n, m)
 print()
 imprimir_matriz(matriz)
 print()
