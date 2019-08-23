@@ -1,3 +1,6 @@
+from typing import Union
+
+
 def transformar_base_2_para_10(n: str) -> int:
     n_reverso = reversed(n)
     numero_base_10 = 0
@@ -28,6 +31,13 @@ def converte_base_3_a_10(b_binario):
         conversoes.append(converte(b_binario, base))
     return conversoes
 
+
+def f(i: Union[int, str]):
+    pass
+
+
+f(1)
+f('a')
 
 while True:
     n = input('Digite um valor binário, ou -1 para finalizar: ')
