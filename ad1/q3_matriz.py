@@ -1,9 +1,10 @@
-n_m_str = input('Digite as dimensões de uma matriz bidimentisionsl: ')
+from random import randint
+from typing import List
+
+n_m_str = input('Digite as dimensões de uma matriz bidimentisional: ')
 n, m = n_m_str.split()
 n = int(n)
 m = int(m)
-from random import randint
-from typing import List
 
 
 def produzir_matriz(n: int, m: int):
