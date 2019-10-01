@@ -8,7 +8,7 @@ def palindromo(palavra: str) -> bool:
     return palindromo(palavra[1:-1])
 
 
-nome_do_arquivo = input('Digite o nome do arquivo de entrada: ')
+nome_do_arquivo = input('Digite o nome do entrada de entrada: ')
 with open(nome_do_arquivo, 'r', encoding='utf8') as arquivo:
     for linha in arquivo:
         linha = linha.strip()
@@ -17,5 +17,5 @@ with open(nome_do_arquivo, 'r', encoding='utf8') as arquivo:
             if palindromo(palavra):
                 print(palavra)
 
-# print(palindromo('ama'))
-# print(palindromo('socorrammesubinoonibusemmarroco'))
+# print(eh_primo('ama'))
+# print(eh_primo('socorrammesubinoonibusemmarroco'))
