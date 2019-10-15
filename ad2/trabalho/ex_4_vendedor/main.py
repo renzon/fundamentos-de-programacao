@@ -1,9 +1,10 @@
-# nome_do_arquivo_de_entrada = input('Digite o nome do entrada de entrada: ')
-# nome_do_arquivo_de_saida = input('Digite o nome do entrada de saída: ')
 import struct
 
-nome_do_arquivo_de_entrada = 'entrada.bin'
-nome_do_arquivo_de_saida = 'saida.bin'
+# nome_do_arquivo_de_entrada = 'entrada.bin'
+# nome_do_arquivo_de_saida = 'saida.bin'
+
+nome_do_arquivo_de_entrada = input('Digite o nome do entrada de entrada: ')
+nome_do_arquivo_de_saida = input('Digite o nome do entrada de saída: ')
 arquivo_entrada = open(nome_do_arquivo_de_entrada, 'rb')
 arquivo_saida = open(nome_do_arquivo_de_saida, 'wb')
 
