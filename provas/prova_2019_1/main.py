@@ -1,5 +1,5 @@
-# nome_do_arquivo = input('Digite o nome do entrada de entrada: ')
-nome_do_arquivo = 'entrada.txt'
+nome_do_arquivo = input('Digite o nome do arquivo de entrada: ')
+# nome_do_arquivo = 'entrada.txt'
 conjunto_palavras_caracteres_repetidos = set()
 with open(nome_do_arquivo, 'r', encoding='utf8') as arquivo:
     for linha in arquivo:
