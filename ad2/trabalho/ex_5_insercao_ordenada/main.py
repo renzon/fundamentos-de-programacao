@@ -22,7 +22,7 @@ def insereOrdenado(nome_do_arquivo: str, novo_valor: float):
                 saida.write(linha)
         if not valor_inserido:
             saida.write(f'{novo_valor}\n')
-
+    os.remove(nome_do_arquivo)
     os.rename(nome_arquivo_temporario, nome_do_arquivo)
 
 
